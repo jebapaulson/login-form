@@ -21,7 +21,7 @@ const LoginPage = () => {
   const onSubmit = (data) => {
     dispatch(login(data));
     if (!isAuthenticated) {
-      navigate('/home');
+      navigate('/');
     }
   };
 

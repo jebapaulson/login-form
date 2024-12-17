@@ -9,8 +9,8 @@ const App = () => (
   <Provider store={store}>
     <Router basename="/login-form">
       <Routes>
-        <Route path="/" element={<LoginPage />} />
-        <Route path="/home" element={<HomePage />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/login" element={<LoginPage />} />
       </Routes>
     </Router>
   </Provider>

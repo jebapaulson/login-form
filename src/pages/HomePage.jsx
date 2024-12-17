@@ -10,7 +10,7 @@ const HomePage = () => {
 
   useEffect(() => {
     if (!isAuthenticated) {
-      navigate('/home');
+      navigate('/');
     }
   }, [isAuthenticated, navigate]);
 
@@ -29,7 +29,7 @@ const HomePage = () => {
           <h2>You are not logged in!</h2>
           <p>Please log in to access your dashboard.</p>
           <Button
-            onClick={() => navigate('/')}
+            onClick={() => navigate('/login')}
             className="wave-button"
           >
             Go to Login <span className="arrow">→</span>
