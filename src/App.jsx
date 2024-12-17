@@ -7,7 +7,7 @@ import HomePage from './pages/HomePage';
 
 const App = () => (
   <Provider store={store}>
-    <Router>
+    <Router basename="/login-form">
       <Routes>
         <Route path="/" element={<LoginPage />} />
         <Route path="/home" element={<HomePage />} />
